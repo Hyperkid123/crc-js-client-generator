@@ -1,0 +1,24 @@
+{
+  "name": "insights-js-client",
+  "version": "0.0.1",
+  "description": "Open API generator for CRC frontend apps",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node scripts/generate.js",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:esm": "tsc",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "start:esm": "npm run build:esm -- -w",
+    "start:cjs": "npm run build:cjs -- -w"
+  },
+  "author": "Martin Marosi",
+  "license": "ISC",
+  "devDependencies": {
+    "fse": "^4.0.1",
+    "lodash": "^4.17.21",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
