@@ -1,8 +1,2 @@
-*
-schema.json
-!src/**
-!scripts/**
-!package.json
-!tsconfig.json
-!tsconfig.cjs.json
-!package-lock.json
+node_modules
+
